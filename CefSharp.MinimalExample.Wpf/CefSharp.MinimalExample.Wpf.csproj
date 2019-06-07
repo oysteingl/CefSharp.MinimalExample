@@ -93,6 +93,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="BrowserWindow.xaml" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -103,6 +104,10 @@
     </Compile>
     <Compile Include="Behaviours\HoverLinkBehaviour.cs" />
     <Compile Include="Behaviours\TextBoxBindingUpdateOnEnterBehaviour.cs" />
+    <Compile Include="BrowserWindow.xaml.cs">
+      <DependentUpon>BrowserWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChildHelper.cs" />
     <Compile Include="Converter\EnvironmentConverter.cs" />
     <Compile Include="Converter\TitleConverter.cs" />
     <Compile Include="MainWindow.xaml.cs">
